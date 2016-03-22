@@ -4,7 +4,7 @@ namespace RPGSite.Entities
 {
     public class UserTypes
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
 
         public string Type { get; set; }
 

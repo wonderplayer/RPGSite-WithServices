@@ -17,7 +17,7 @@ namespace RPGSite.Configurations
             Property(x => x.Quantity).IsRequired().HasColumnName("Quantity");
             Property(x=>x.Total).IsRequired().HasColumnName("Total");
 
-            HasRequired(oi => oi.Order).WithMany(o => o.Id).HasForeignKey(oi => oi.OrderId);
+            HasRequired(oi => oi.Order).WithMany(o => o.OrderItems).HasForeignKey(oi => oi.OrderId);
             HasRequired(oi => oi.Equipment).WithMany(e => e.OrderItems).HasForeignKey(oi => oi.EquipmentId);
         }
     }
