@@ -94,7 +94,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RPGSite\EntityMapping.csproj">
+    <ProjectReference Include="..\EntityMapping\EntityMapping.csproj">
       <Project>{72fce93c-8135-41ef-9f67-f6ec3acc4412}</Project>
       <Name>EntityMapping</Name>
     </ProjectReference>
